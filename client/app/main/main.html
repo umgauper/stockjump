@@ -1,11 +1,5 @@
 <div class="container">
-  <div class="row">
-    <input type="text" ng-model="symbol">
-    <button ng-click="addSymbol(symbol)" ng-disabled="!symbol">Add Stock</button>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
+  <div class="row chart-row">
     <div class="chart"></div>
   </div>
 </div>
@@ -19,11 +13,15 @@
     </ul>
   </div>
 </div>
-
+<div class="container">
+  <div class="row">
+    <input type="text" ng-model="symbol">
+    <button ng-click="addSymbol(symbol)" ng-disabled="!symbol">Add Stock</button>
+  </div>
+</div>
 <footer class="footer">
   <div class="container">
-      <p>Angular Fullstack v2.0.13 |
-        <a href="https://twitter.com/tyhenkel">@tyhenkel</a> |
-         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Issues</a></p>
+      <p>Stockjump Free Code Camp Basejump #3 |
+        <a href="https://twitter.com/umgauper">@umgauper</a> |
   </div>
 </footer>
