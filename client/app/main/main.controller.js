@@ -60,7 +60,6 @@ angular.module('stockjumpApp')
     /* Every ten seconds, check if a new symbol has been added, so users can see changes other users have made. */
     setInterval(function() {
       $http.get('api/symbols').success(function(data) {
-        alert(data.length);
         if(data.length > $scope.symbols.length) {
           $scope.updateChart();
         }
