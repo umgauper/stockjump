@@ -36,6 +36,7 @@ angular.module('stockjumpApp')
 
           //udpate list of symbols
           $scope.updateChart();
+          $scope.symbol = '';
 
         });
     };
