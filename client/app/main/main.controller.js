@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('stockjumpApp')
-  .controller('MainCtrl', function ($scope, $http, chartService) {
+  .controller('MainCtrl', function ($scope, $http, chartService, queryService) {
 
     var seriesOptions = [];
 
@@ -23,7 +23,8 @@ angular.module('stockjumpApp')
               $scope.stockSymbols.push(el.symbol);
             });
 
-            var query = $scope.constructQuery($scope.stockSymbols);
+            var query = queryService.constructQuery($scope.stockSymbols);
+            alert(query);
             $scope.addStock(query);
         }
       });
@@ -49,26 +50,10 @@ angular.module('stockjumpApp')
       });
     };
 
-    $scope.constructQuery = function(stockSymbols) {
-      var query = '';
-      var queryBeginning = 'https://query.yahooapis.com/v1/public/yql?q=select * from yahoo.finance.historicaldata where symbol in';
-      var queryEnding = 'and startDate = "2015-01-01" and endDate = "2015-07-20"&format=json&diagnostics=true&env=http://datatables.org/alltables.env&format=json';
-      //TODO: change endDate in query to reflect todays date..using Date method...
-      var queryMiddle = '(';
-
-      for (var i = 0; i < stockSymbols.length - 1; i++) {
-        queryMiddle = queryMiddle + '"' + stockSymbols[i] + '"' + ", ";
-      }
-
-      queryMiddle = queryMiddle + '"' + stockSymbols[stockSymbols.length-1] + '")';
-
-      query = queryBeginning + queryMiddle + queryEnding;
-      return query;
-    };
-
 
     $scope.addStock = function(query) { //send query to Yahoo Finance API, push appropriate data into seriesOptions Array, then render new chart with the data
 
+      //put this into callback...
       $http.get(query).success(function (data) {
 
         var seriesOptions = [];
@@ -93,11 +78,14 @@ angular.module('stockjumpApp')
           }
         }
         if($('.chart').highcharts()) {//If there is a chart,
-          $('.chart').highcharts().destroy(); // destroy the chart before...
+          $('.chart').highcharts().destroy(); // destroy the chart before
         }
           chartService.makeChart(seriesOptions); //...building a new chart.
       });
     };
 
     $scope.updateChart(); //make chart when page loads
+
+
+
   });
