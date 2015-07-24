@@ -8,7 +8,7 @@ angular.module('stockjumpApp')
       var query2 = 'and startDate = "2015-01-01" and endDate = "';
       var query3 = '"&format=json&diagnostics=true&env=http://datatables.org/alltables.env&format=json';
 
-      //create string of today's date for endDate in query
+      /* Create string of today's date for endDate in query. */
 
       var today = new Date();
       var year = today.getFullYear();
@@ -21,7 +21,7 @@ angular.module('stockjumpApp')
 
       var endDate = year + '-' + month + '-' + date;
 
-      //put stock symbols in correct format for query
+      /* Put stock symbols in correct format for query. */
 
       var query1 = '(';
 
