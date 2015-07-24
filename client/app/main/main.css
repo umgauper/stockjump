@@ -22,13 +22,11 @@ li.symbol {
     display: inline-block !important;
     background-color: rgb(250, 139, 96);
     width: 150px !important;
-    border: 2px solid transparent !important;
+    border: 1px solid transparent;
     border-radius: 20px !important;
-    box-shadow: 2px 2px gray;
     font-weight: bold;
     font-size: 16px;
     letter-spacing: 5px;
-    /*padding: 12px 0 8px 20px;*/
 }
 
 li.symbol:nth-of-type(n + 1) {
