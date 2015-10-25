@@ -13,9 +13,9 @@
 <div class="container">
   <div class="row">
     <ul class="list-group symbols">
-      <li ng-repeat="symbol in allSymbols" id="{{symbol._id}}" class="list-group-item symbol" >
-        {{symbol.symbol}}
-        <button ng-click="deleteSymbol(symbol._id)" class="close">X</button>
+      <li ng-repeat="item in stockSymbols" id="{{item._id}}" class="list-group-item symbol" >
+        {{item.symbol}}
+        <button ng-click="deleteSymbol(item._id)" class="close">X</button>
       </li>
     </ul>
   </div>
