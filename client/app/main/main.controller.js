@@ -3,7 +3,6 @@
 angular.module('stockjumpApp')
   .controller('MainCtrl', function ($scope, $http, chartService, queryService) {
 
-    $scope.stockSymbols = [];
 
     $scope.updateChart = function() {
       $http.get('/api/symbols').success(function (data) {
@@ -12,14 +11,9 @@ angular.module('stockjumpApp')
         if(data.length === 0) {
           $('.chart').highcharts().destroy();
         } else {
-            console.log(data);
-            $scope.allSymbols = data;
-            $scope.stockSymbols = [];
-            $scope.allSymbols.forEach(function (el) {
-              $scope.stockSymbols.push(el.symbol);
-            });
+            $scope.stockSymbols = data;
 
-            var query = queryService.constructQuery($scope.stockSymbols);
+            var query = queryService.constructQuery($scope.stockSymbols.map(function(el) { return el.symbol }));
             $scope.graphNewStock(query);
         }
       });
