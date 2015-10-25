@@ -23,13 +23,14 @@ angular.module('stockjumpApp')
 
       /* Put stock symbols in correct format for query. */
 
-      var query1 = '(';
+      var query1 = stockSymbols.reduce(function(prev, cur, index, arr) {
+        if(index !== arr.length-1) {
+          return prev + '"' + cur + '"' + ", ";
+        } else {
+          return prev + '"' + cur + '"' + ')';
+        }
+      }, '(');
 
-      for (var i = 0; i < stockSymbols.length - 1; i++) {
-        query1 = query1 + '"' + stockSymbols[i] + '"' + ", ";
-      }
-
-      query1 = query1 + '"' + stockSymbols[stockSymbols.length-1] + '")';
 
       query = query0 + query1 + query2 + endDate + query3;
 
