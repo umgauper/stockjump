@@ -42,30 +42,19 @@ angular.module('stockjumpApp')
       /* extract the date and stock value from data returned from Yahoo Finance API request, */
       /* and put the data into the format required by highcharts */
 
-      var seriesOptions = [];
-      var j = 0;
+      var chartData = {};
 
-      seriesOptions.push({name: data.query.results.quote[0].Symbol, data: []});
+      chartData.name = data.query.results.quote[0].Symbol;
 
-      for(var i = 0; i < data.query.results.quote.length; i++) {
-        if (seriesOptions[j].name === data.query.results.quote[i].Symbol) {
-          var arr = [];
-          arr.push(Date.parse(data.query.results.quote[i].Date));
-          arr.push(Number(data.query.results.quote[i].Open));
-          seriesOptions[j].data.push(arr);
-        } else {
-          j++;
-          seriesOptions.push({
-              name: data.query.results.quote[i].Symbol,
-              data: [[
-                Date.parse(data.query.results.quote[i].Date),
-                Number(data.query.results.quote[i].Open)
-              ]]
-            }
-          );
-        }
-      }
-      return seriesOptions
+      chartData.data = data.query.results.quote.map(function(el) {
+        var arr = [];
+        arr.push(Date.parse(el.Date));
+        arr.push(parseInt(el.Open));
+        return arr;
+      });
+
+      return chartData;
+
     }
   }
 );
