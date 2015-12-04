@@ -1,0 +1,330 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '--save', 'bson' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'bson', null ]
+6 verbose cache add name=undefined spec="bson" args=["bson",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'bson',
+7 verbose parsed url   path: 'bson',
+7 verbose parsed url   href: 'bson' }
+8 silly lockFile 2c0fc69b-bson bson
+9 verbose lock bson /home/una/.npm/2c0fc69b-bson.lock
+10 silly lockFile 2c0fc69b-bson bson
+11 silly lockFile 2c0fc69b-bson bson
+12 verbose addNamed [ 'bson', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile f7d382ac-bson bson@
+15 verbose lock bson@ /home/una/.npm/f7d382ac-bson.lock
+16 silly addNameRange { name: 'bson', range: '*', hasData: false }
+17 verbose url raw bson
+18 verbose url resolving [ 'https://registry.npmjs.org/', './bson' ]
+19 verbose url resolved https://registry.npmjs.org/bson
+20 info trying registry request attempt 1 at 23:07:32
+21 verbose etag "1DKVL2BVPNYJLJER0S1P7RJXW"
+22 http GET https://registry.npmjs.org/bson
+23 http 304 https://registry.npmjs.org/bson
+24 silly registry.get cb [ 304,
+24 silly registry.get   { date: 'Thu, 03 Dec 2015 07:07:32 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     etag: '"1DKVL2BVPNYJLJER0S1P7RJXW"',
+24 silly registry.get     age: '44',
+24 silly registry.get     connection: 'keep-alive',
+24 silly registry.get     'x-served-by': 'cache-lax1431-LAX',
+24 silly registry.get     'x-cache': 'HIT',
+24 silly registry.get     'x-cache-hits': '2',
+24 silly registry.get     'x-timer': 'S1449126452.833009,VS0,VE0',
+24 silly registry.get     vary: 'Accept' } ]
+25 verbose etag bson from cache
+26 silly addNameRange number 2 { name: 'bson', range: '*', hasData: true }
+27 silly addNameRange versions [ 'bson',
+27 silly addNameRange   [ '0.0.1',
+27 silly addNameRange     '0.0.2',
+27 silly addNameRange     '0.0.3',
+27 silly addNameRange     '0.0.4',
+27 silly addNameRange     '0.0.5',
+27 silly addNameRange     '0.0.6',
+27 silly addNameRange     '0.0.7',
+27 silly addNameRange     '0.0.8',
+27 silly addNameRange     '0.0.9',
+27 silly addNameRange     '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.3',
+27 silly addNameRange     '0.1.4',
+27 silly addNameRange     '0.1.5',
+27 silly addNameRange     '0.1.6',
+27 silly addNameRange     '0.1.7',
+27 silly addNameRange     '0.1.8',
+27 silly addNameRange     '0.1.9',
+27 silly addNameRange     '0.2.0',
+27 silly addNameRange     '0.2.1',
+27 silly addNameRange     '0.2.2',
+27 silly addNameRange     '0.2.3',
+27 silly addNameRange     '0.2.4',
+27 silly addNameRange     '0.2.5',
+27 silly addNameRange     '0.2.6',
+27 silly addNameRange     '0.2.7',
+27 silly addNameRange     '0.2.8',
+27 silly addNameRange     '0.2.9',
+27 silly addNameRange     '0.2.10',
+27 silly addNameRange     '0.2.11',
+27 silly addNameRange     '0.2.12',
+27 silly addNameRange     '0.2.13',
+27 silly addNameRange     '0.2.14',
+27 silly addNameRange     '0.2.15',
+27 silly addNameRange     '0.2.16',
+27 silly addNameRange     '0.2.17',
+27 silly addNameRange     '0.2.18',
+27 silly addNameRange     '0.2.19',
+27 silly addNameRange     '0.2.20',
+27 silly addNameRange     '0.2.21',
+27 silly addNameRange     '0.3.0',
+27 silly addNameRange     '0.3.1',
+27 silly addNameRange     '0.3.2',
+27 silly addNameRange     '0.4.0',
+27 silly addNameRange     '0.4.1',
+27 silly addNameRange     '0.4.2',
+27 silly addNameRange     '0.4.3',
+27 silly addNameRange     '0.4.4',
+27 silly addNameRange     '0.4.5',
+27 silly addNameRange     '0.4.6',
+27 silly addNameRange     '0.4.7',
+27 silly addNameRange     '0.4.8',
+27 silly addNameRange     '0.2.22',
+27 silly addNameRange     '0.4.10',
+27 silly addNameRange     '0.4.12',
+27 silly addNameRange     '0.4.13',
+27 silly addNameRange     '0.4.14',
+27 silly addNameRange     '0.4.15',
+27 silly addNameRange     '0.4.16',
+27 silly addNameRange     '0.4.17',
+27 silly addNameRange     '0.4.18',
+27 silly addNameRange     '0.4.19',
+27 silly addNameRange     '0.4.20' ] ]
+28 verbose addNamed [ 'bson', '0.4.20' ]
+29 verbose addNamed [ '0.4.20', '0.4.20' ]
+30 silly lockFile 6b92b60f-bson-0-4-20 bson@0.4.20
+31 verbose lock bson@0.4.20 /home/una/.npm/6b92b60f-bson-0-4-20.lock
+32 silly lockFile a1bf8d31-y-npmjs-org-bson-bson-0-4-20-tgz https://registry.npmjs.org/bson/-/bson-0.4.20.tgz
+33 verbose lock https://registry.npmjs.org/bson/-/bson-0.4.20.tgz /home/una/.npm/a1bf8d31-y-npmjs-org-bson-bson-0-4-20-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/bson/-/bson-0.4.20.tgz',
+34 verbose addRemoteTarball   '39b7fa42ef49378f71f40cbc165e46b41c2ff79e' ]
+35 info retry fetch attempt 1 at 23:07:33
+36 verbose fetch to= /home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/tmp.tgz
+37 http GET https://registry.npmjs.org/bson/-/bson-0.4.20.tgz
+38 http 200 https://registry.npmjs.org/bson/-/bson-0.4.20.tgz
+39 verbose tar unpack /home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/tmp.tgz
+40 silly lockFile 7d491800-3020-0-04086554376408458-package tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+41 verbose lock tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package /home/una/.npm/7d491800-3020-0-04086554376408458-package.lock
+42 silly lockFile 044eed09-3020-0-04086554376408458-tmp-tgz tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/tmp.tgz
+43 verbose lock tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/tmp.tgz /home/una/.npm/044eed09-3020-0-04086554376408458-tmp-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm extractEntry LICENSE
+48 silly gunzTarPerm extractEntry alternate_parsers/bson.js
+49 silly gunzTarPerm extractEntry alternate_parsers/faster_bson.js
+50 silly gunzTarPerm extractEntry HISTORY
+51 silly gunzTarPerm extractEntry bower.json
+52 silly gunzTarPerm extractEntry browser_build/package.json
+53 silly gunzTarPerm extractEntry browser_build/bson.js
+54 silly gunzTarPerm extractEntry lib/bson/binary.js
+55 silly gunzTarPerm extractEntry lib/bson/db_ref.js
+56 silly gunzTarPerm extractEntry lib/bson/double.js
+57 silly gunzTarPerm extractEntry lib/bson/float_parser.js
+58 silly gunzTarPerm extractEntry lib/bson/index.js
+59 silly gunzTarPerm extractEntry lib/bson/code.js
+60 silly gunzTarPerm extractEntry lib/bson/map.js
+61 silly gunzTarPerm extractEntry lib/bson/max_key.js
+62 silly gunzTarPerm extractEntry lib/bson/min_key.js
+63 silly gunzTarPerm extractEntry lib/bson/objectid.js
+64 silly gunzTarPerm extractEntry lib/bson/symbol.js
+65 silly gunzTarPerm extractEntry lib/bson/bson.js
+66 silly gunzTarPerm extractEntry lib/bson/regexp.js
+67 silly gunzTarPerm extractEntry lib/bson/binary_parser.js
+68 silly gunzTarPerm extractEntry lib/bson/timestamp.js
+69 silly gunzTarPerm extractEntry lib/bson/long.js
+70 silly gunzTarPerm extractEntry lib/bson/parser/calculate_size.js
+71 silly gunzTarPerm extractEntry lib/bson/parser/deserializer.js
+72 silly gunzTarPerm extractEntry lib/bson/parser/serializer.js
+73 silly gunzTarPerm extractEntry tools/gleak.js
+74 silly lockFile 7d491800-3020-0-04086554376408458-package tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+75 silly lockFile 7d491800-3020-0-04086554376408458-package tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+76 silly lockFile 044eed09-3020-0-04086554376408458-tmp-tgz tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/tmp.tgz
+77 silly lockFile 044eed09-3020-0-04086554376408458-tmp-tgz tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/tmp.tgz
+78 verbose tar pack [ '/home/una/.npm/bson/0.4.20/package.tgz',
+78 verbose tar pack   '/home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package' ]
+79 verbose tarball /home/una/.npm/bson/0.4.20/package.tgz
+80 verbose folder /home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+81 silly lockFile 7d491800-3020-0-04086554376408458-package tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+82 verbose lock tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package /home/una/.npm/7d491800-3020-0-04086554376408458-package.lock
+83 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+84 verbose lock tar:///home/una/.npm/bson/0.4.20/package.tgz /home/una/.npm/cb9fb771--una-npm-bson-0-4-20-package-tgz.lock
+85 silly lockFile 7d491800-3020-0-04086554376408458-package tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+86 silly lockFile 7d491800-3020-0-04086554376408458-package tar:///home/una/tmp/npm-4495-qd9T1ofO/1449126453020-0.04086554376408458/package
+87 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+88 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+89 silly lockFile e57fe99d-home-una-npm-bson-0-4-20-package /home/una/.npm/bson/0.4.20/package
+90 verbose lock /home/una/.npm/bson/0.4.20/package /home/una/.npm/e57fe99d-home-una-npm-bson-0-4-20-package.lock
+91 silly lockFile e57fe99d-home-una-npm-bson-0-4-20-package /home/una/.npm/bson/0.4.20/package
+92 silly lockFile e57fe99d-home-una-npm-bson-0-4-20-package /home/una/.npm/bson/0.4.20/package
+93 verbose tar unpack /home/una/.npm/bson/0.4.20/package.tgz
+94 silly lockFile 9e93a392-home-una-npm-bson-0-4-20-package tar:///home/una/.npm/bson/0.4.20/package
+95 verbose lock tar:///home/una/.npm/bson/0.4.20/package /home/una/.npm/9e93a392-home-una-npm-bson-0-4-20-package.lock
+96 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+97 verbose lock tar:///home/una/.npm/bson/0.4.20/package.tgz /home/una/.npm/cb9fb771--una-npm-bson-0-4-20-package-tgz.lock
+98 silly gunzTarPerm modes [ '755', '644' ]
+99 silly gunzTarPerm extractEntry package.json
+100 silly gunzTarPerm extractEntry README.md
+101 silly gunzTarPerm extractEntry LICENSE
+102 silly gunzTarPerm extractEntry HISTORY
+103 silly gunzTarPerm extractEntry alternate_parsers/bson.js
+104 silly gunzTarPerm extractEntry alternate_parsers/faster_bson.js
+105 silly gunzTarPerm extractEntry bower.json
+106 silly gunzTarPerm extractEntry browser_build/package.json
+107 silly gunzTarPerm extractEntry browser_build/bson.js
+108 silly gunzTarPerm extractEntry lib/bson/binary.js
+109 silly gunzTarPerm extractEntry lib/bson/db_ref.js
+110 silly gunzTarPerm extractEntry lib/bson/double.js
+111 silly gunzTarPerm extractEntry lib/bson/float_parser.js
+112 silly gunzTarPerm extractEntry lib/bson/index.js
+113 silly gunzTarPerm extractEntry lib/bson/code.js
+114 silly gunzTarPerm extractEntry lib/bson/map.js
+115 silly gunzTarPerm extractEntry lib/bson/max_key.js
+116 silly gunzTarPerm extractEntry lib/bson/min_key.js
+117 silly gunzTarPerm extractEntry lib/bson/objectid.js
+118 silly gunzTarPerm extractEntry lib/bson/symbol.js
+119 silly gunzTarPerm extractEntry lib/bson/bson.js
+120 silly gunzTarPerm extractEntry lib/bson/regexp.js
+121 silly gunzTarPerm extractEntry lib/bson/binary_parser.js
+122 silly gunzTarPerm extractEntry lib/bson/timestamp.js
+123 silly gunzTarPerm extractEntry lib/bson/long.js
+124 silly gunzTarPerm extractEntry lib/bson/parser/calculate_size.js
+125 silly gunzTarPerm extractEntry lib/bson/parser/deserializer.js
+126 silly gunzTarPerm extractEntry lib/bson/parser/serializer.js
+127 silly gunzTarPerm extractEntry tools/gleak.js
+128 silly lockFile 9e93a392-home-una-npm-bson-0-4-20-package tar:///home/una/.npm/bson/0.4.20/package
+129 silly lockFile 9e93a392-home-una-npm-bson-0-4-20-package tar:///home/una/.npm/bson/0.4.20/package
+130 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+131 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+132 verbose chmod /home/una/.npm/bson/0.4.20/package.tgz 644
+133 verbose chown /home/una/.npm/bson/0.4.20/package.tgz [ 1000, 1000 ]
+134 silly lockFile a1bf8d31-y-npmjs-org-bson-bson-0-4-20-tgz https://registry.npmjs.org/bson/-/bson-0.4.20.tgz
+135 silly lockFile a1bf8d31-y-npmjs-org-bson-bson-0-4-20-tgz https://registry.npmjs.org/bson/-/bson-0.4.20.tgz
+136 silly lockFile 6b92b60f-bson-0-4-20 bson@0.4.20
+137 silly lockFile 6b92b60f-bson-0-4-20 bson@0.4.20
+138 silly lockFile f7d382ac-bson bson@
+139 silly lockFile f7d382ac-bson bson@
+140 silly resolved [ { name: 'bson',
+140 silly resolved     description: 'A bson parser for node.js and the browser',
+140 silly resolved     keywords: [ 'mongodb', 'bson', 'parser' ],
+140 silly resolved     version: '0.4.20',
+140 silly resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+140 silly resolved     contributors: [],
+140 silly resolved     repository: { type: 'git', url: 'git://github.com/mongodb/js-bson.git' },
+140 silly resolved     bugs: { url: 'https://github.com/mongodb/js-bson/issues' },
+140 silly resolved     devDependencies:
+140 silly resolved      { nodeunit: '0.9.0',
+140 silly resolved        gleak: '0.2.3',
+140 silly resolved        one: '2.X.X',
+140 silly resolved        benchmark: '1.0.0',
+140 silly resolved        colors: '1.1.0' },
+140 silly resolved     config: { native: false },
+140 silly resolved     main: './lib/bson/index',
+140 silly resolved     directories: { lib: './lib/bson' },
+140 silly resolved     engines: { node: '>=0.6.19' },
+140 silly resolved     scripts: { test: 'nodeunit ./test/node' },
+140 silly resolved     browser: 'lib/bson/bson.js',
+140 silly resolved     license: 'Apache-2.0',
+140 silly resolved     readme: 'Javascript + C++ BSON parser\n============================\n\nThis BSON parser is primarily meant to be used with the `mongodb` node.js driver.\nHowever, wonderful tools such as `onejs` can package up a BSON parser that will work in the browser.\nThe current build is located in the `browser_build/bson.js` file.\n\nA simple example of how to use BSON in the browser:\n\n```html\n<html>\n<head>\n  <script src="https://raw.github.com/mongodb/js-bson/master/browser_build/bson.js">\n  </script>\n</head>\n<body onload="start();">\n<script>\n  function start() {\n    var BSON = bson().BSON;\n    var Long = bson().Long;\n\n    var doc = {long: Long.fromNumber(100)}\n\n    // Serialize a document\n    var data = BSON.serialize(doc, false, true, false);\n    // De serialize it again\n    var doc_2 = BSON.deserialize(data);\n  }\n</script>\n</body>\n</html>\n```\n\nA simple example of how to use BSON in `node.js`:\n\n```javascript\nvar bson = require("bson");\nvar BSON = new bson.BSONPure.BSON();\nvar Long = bson.BSONPure.Long;\n\nvar doc = {long: Long.fromNumber(100)}\n\n// Serialize a document\nvar data = BSON.serialize(doc, false, true, false);\nconsole.log("data:", data);\n\n// Deserialize the resulting Buffer\nvar doc_2 = BSON.deserialize(data);\nconsole.log("doc_2:", doc_2);\n```\n\nThe API consists of two simple methods to serialize/deserialize objects to/from BSON format:\n\n  * BSON.serialize(object, checkKeys, asBuffer, serializeFunctions)\n     * @param {Object} object the Javascript object to serialize.\n     * @param {Boolean} checkKeys the serializer will check if keys are valid.\n     * @param {Boolean} asBuffer return the serialized object as a Buffer object **(ignore)**.\n     * @param {Boolean} serializeFunctions serialize the javascript functions **(default:false)**\n     * @return {TypedArray/Array} returns a TypedArray or Array depending on what your browser supports\n \n  * BSON.deserialize(buffer, options, isArray)\n     * Options\n       * **evalFunctions** {Boolean, default:false}, evaluate functions in the BSON document scoped to the object deserialized.\n       * **cacheFunctions** {Boolean, default:false}, cache evaluated functions for reuse.\n       * **cacheFunctionsCrc32** {Boolean, default:false}, use a crc32 code for caching, otherwise use the string of the function.\n       * **promoteBuffers** {Boolean, default:false}, deserialize Binary data directly into node.js Buffer object.\n     * @param {TypedArray/Array} a TypedArray/Array containing the BSON data\n     * @param {Object} [options] additional options used for the deserialization.\n     * @param {Boolean} [isArray] ignore used for recursive parsing.\n     * @return {Object} returns the deserialized Javascript Object.\n',
+140 silly resolved     readmeFilename: 'README.md',
+140 silly resolved     _id: 'bson@0.4.20',
+140 silly resolved     dist: { shasum: '4abc1c235c3a11d00587ae736ced9c368e08ebc2' },
+140 silly resolved     _from: 'bson@',
+140 silly resolved     _resolved: 'https://registry.npmjs.org/bson/-/bson-0.4.20.tgz' } ]
+141 info install bson@0.4.20 into /home/una/fullstack/stockjump
+142 info installOne bson@0.4.20
+143 info /home/una/fullstack/stockjump/node_modules/bson unbuild
+144 verbose tar unpack /home/una/.npm/bson/0.4.20/package.tgz
+145 silly lockFile 5290c8ab-tack-stockjump-node-modules-bson tar:///home/una/fullstack/stockjump/node_modules/bson
+146 verbose lock tar:///home/una/fullstack/stockjump/node_modules/bson /home/una/.npm/5290c8ab-tack-stockjump-node-modules-bson.lock
+147 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+148 verbose lock tar:///home/una/.npm/bson/0.4.20/package.tgz /home/una/.npm/cb9fb771--una-npm-bson-0-4-20-package-tgz.lock
+149 silly gunzTarPerm modes [ '755', '644' ]
+150 silly gunzTarPerm extractEntry package.json
+151 silly gunzTarPerm extractEntry README.md
+152 silly gunzTarPerm extractEntry LICENSE
+153 silly gunzTarPerm extractEntry HISTORY
+154 silly gunzTarPerm extractEntry alternate_parsers/bson.js
+155 silly gunzTarPerm extractEntry alternate_parsers/faster_bson.js
+156 silly gunzTarPerm extractEntry bower.json
+157 silly gunzTarPerm extractEntry browser_build/package.json
+158 silly gunzTarPerm extractEntry browser_build/bson.js
+159 silly gunzTarPerm extractEntry lib/bson/binary.js
+160 silly gunzTarPerm extractEntry lib/bson/db_ref.js
+161 silly gunzTarPerm extractEntry lib/bson/double.js
+162 silly gunzTarPerm extractEntry lib/bson/float_parser.js
+163 silly gunzTarPerm extractEntry lib/bson/index.js
+164 silly gunzTarPerm extractEntry lib/bson/code.js
+165 silly gunzTarPerm extractEntry lib/bson/map.js
+166 silly gunzTarPerm extractEntry lib/bson/max_key.js
+167 silly gunzTarPerm extractEntry lib/bson/min_key.js
+168 silly gunzTarPerm extractEntry lib/bson/objectid.js
+169 silly gunzTarPerm extractEntry lib/bson/symbol.js
+170 silly gunzTarPerm extractEntry lib/bson/bson.js
+171 silly gunzTarPerm extractEntry lib/bson/regexp.js
+172 silly gunzTarPerm extractEntry lib/bson/binary_parser.js
+173 silly gunzTarPerm extractEntry lib/bson/timestamp.js
+174 silly gunzTarPerm extractEntry lib/bson/long.js
+175 silly gunzTarPerm extractEntry lib/bson/parser/calculate_size.js
+176 silly gunzTarPerm extractEntry lib/bson/parser/deserializer.js
+177 silly gunzTarPerm extractEntry lib/bson/parser/serializer.js
+178 silly gunzTarPerm extractEntry tools/gleak.js
+179 silly lockFile 5290c8ab-tack-stockjump-node-modules-bson tar:///home/una/fullstack/stockjump/node_modules/bson
+180 silly lockFile 5290c8ab-tack-stockjump-node-modules-bson tar:///home/una/fullstack/stockjump/node_modules/bson
+181 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+182 silly lockFile cb9fb771--una-npm-bson-0-4-20-package-tgz tar:///home/una/.npm/bson/0.4.20/package.tgz
+183 info preinstall bson@0.4.20
+184 verbose readDependencies using package.json deps
+185 verbose readDependencies using package.json deps
+186 silly resolved []
+187 verbose about to build /home/una/fullstack/stockjump/node_modules/bson
+188 info build /home/una/fullstack/stockjump/node_modules/bson
+189 verbose linkStuff [ false,
+189 verbose linkStuff   false,
+189 verbose linkStuff   false,
+189 verbose linkStuff   '/home/una/fullstack/stockjump/node_modules' ]
+190 info linkStuff bson@0.4.20
+191 verbose linkBins bson@0.4.20
+192 verbose linkMans bson@0.4.20
+193 verbose rebuildBundles bson@0.4.20
+194 info install bson@0.4.20
+195 info postinstall bson@0.4.20
+196 error peerinvalid The package karma does not satisfy its siblings' peerDependencies requirements!
+196 error peerinvalid Peer grunt-karma@0.8.3 wants karma@~0.12.0
+196 error peerinvalid Peer karma-html2js-preprocessor@0.1.0 wants karma@>=0.9
+196 error peerinvalid Peer karma-jasmine@0.1.6 wants karma@>=0.9
+196 error peerinvalid Peer karma-ng-html2js-preprocessor@0.1.2 wants karma@>=0.9
+196 error peerinvalid Peer karma-ng-scenario@0.1.0 wants karma@>=0.9
+196 error peerinvalid Peer karma-requirejs@0.2.2 wants karma@>=0.9
+196 error peerinvalid Peer karma-script-launcher@0.1.0 wants karma@>=0.9
+196 error peerinvalid Peer karma-coffee-preprocessor@0.2.1 wants karma@>=0.11.14
+196 error peerinvalid Peer karma-ng-jade2js-preprocessor@0.1.5 wants karma@>=0.9
+196 error peerinvalid Peer karma-phantomjs-launcher@0.1.4 wants karma@>=0.9
+197 error System Linux 3.16.0-53-generic
+198 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "--save" "bson"
+199 error cwd /home/una/fullstack/stockjump
+200 error node -v v0.10.25
+201 error npm -v 1.3.10
+202 error code EPEERINVALID
+203 verbose exit [ 1, true ]

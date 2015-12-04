@@ -30,9 +30,20 @@ angular.module('stockjumpApp')
     };
 
     $scope.addSymbol = function(symbol) {
-        $http.post('/api/symbols', {symbol: symbol}).success(function() {
-          $scope.updateChart();
-          $scope.symbol = '';
+
+        var query = queryService.constructQuery(symbol);
+
+        $http.get(query).success(function(data) {
+          if(!data.query.results) {
+            $('#stockInputDiv').append('<p id="error">Error! Stock does not exist</p>');
+            $scope.symbol = '';
+          } else {
+            $('#error').remove();
+            $http.post('/api/symbols', {symbol: symbol}).success(function() {
+              $scope.updateChart();
+              $scope.symbol = '';
+            });
+          }
         });
     };
 

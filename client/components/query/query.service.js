@@ -24,6 +24,5 @@ angular.module('stockjumpApp')
       query = `${queryStart}"${symbol}"${queryDates}${endDate}${queryEnd}`;
 
       return query;
-
     }
   });
