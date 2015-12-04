@@ -69,3 +69,9 @@ button.add {
 i {
   color: rgb(239, 113, 59);
 }
+
+p#error {
+  background-color: indianred;
+  width: 300px;
+  padding: 10px;
+}
