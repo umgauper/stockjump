@@ -26,10 +26,10 @@ module.exports = function(app) {
   app.use(bodyParser.urlencoded({ extended: false }));
   app.use(bodyParser.json());
   app.use(methodOverride());
-  app.use(cookieParser());
+  app.use(cookieParser()) ;
   app.use(passport.initialize());
   if ('production' === env) {
-    app.use(favicon(path.join(config.root, 'public/favicon.ico')));
+    app.use(favicon(path.join(__dirname + 'favicon.ico')));
     app.use(express.static(path.join(config.root, 'public')));
     app.set('appPath', config.root + '/public');
     app.use(morgan('dev'));
